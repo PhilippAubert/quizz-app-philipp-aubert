@@ -5,7 +5,7 @@
 body {
   font-family: sans-serif;
   font-size: 112.5%;
-  line-height: 1.5;da
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -84,9 +84,6 @@ h1 {
   margin: 0;
 }
 
-.question h2 {
-}
-
 .question {
   border: 2px solid #00f;
   padding: 5%;
@@ -123,9 +120,9 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin:10px 0;
-  color:#00f;
-  font-style:italic;
+  margin: 10px 0;
+  color: #00f;
+  font-style: italic;
 }
 
 .tag {
@@ -136,62 +133,82 @@ h1 {
   color: #bbb;
 }
 
+/*PROFLE SITE*/
 
-
-/*PROFLE SITE*/ 
-
-.photo-box{
-  margin-top:25px;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  border-bottom:1px solid #00f;
-  border-top:1px solid #00f;
-  padding:20%;
+.photo-box {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #00f;
+  border-top: 1px solid #00f;
+  padding: 20%;
+  position: relative;
 }
 
-.photo-box h3{
-  margin-left:15px;
-  margin-top:50px;
-  color:#00f;
-  font-style:italic;
+.photo-box h3 {
+  font-size: 1.9em;
+  color: #00f;
+  font-style: italic;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 40%;
 }
 
-.photo-box:hover{
-  color:#fff;
-  background-color:#0
+.cropped {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 35%;
 }
 
-.cropped{
-  width: 150px;
-  height:150px;
-  object-fit:cover;
-  border-radius:100%;
+.photo-box:hover {
+  scale: 1.2;
 }
 
-.about{
-  margin-top:50px;
+.about {
+  margin-top: 50px;
 }
 
-.about h2{
-  color:#00f;
-  font-style:italic;
-  margin:0;
-  font-size:2em;
-  margin-bottom:20px;
+.about h2 {
+  color: #00f;
+  font-style: italic;
+  margin: 0;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
-.about p{
-  margin:0;
-  font-style:italic;
-  color:#fff;
-  background-color:#00f;
-  font-size:0.8em;
-  padding:5%;
+.about p {
+  margin: 0;
+  font-style: italic;
+  color: #fff;
+  background-color: #00f;
+  font-size: 0.8em;
+  padding: 5%;
 }
 
-.headline-tag{
-  font-style:italic;
-  color:#00f;
-  border-top:1px solid #00f;
+.headline-tag {
+  font-style: italic;
+  color: #00f;
+  border-top: 1px solid #00f;
+}
+
+.logout-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-logout {
+  margin-bottom: 20px;
+  font-style: italic;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #00f;
+}
+
+.button-logout a {
+  color: #fff;
+  text-decoration: none;
 }
