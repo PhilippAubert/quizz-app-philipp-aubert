@@ -29,6 +29,21 @@ button {
   margin: 0 auto;
 }
 
+.background-animation {
+  background: linear-gradient(90deg #00f, #fff, #ff0);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -80,22 +95,22 @@ h1 {
 
 /*question-card*/
 
-.question p h2 {
+.question-card__total p h2 {
   margin: 0;
 }
 
-.question {
+.question-card__total {
   border: 2px solid #00f;
   padding: 5%;
   margin: 40px 0;
   font-size: 0.6em;
-  background: #ddd;
+  background: #fff;
   color: #00f;
   position: relative;
   text-align: center;
 }
 
-.bookmark {
+.question-card__bookmark {
   color: rgb(251, 255, 0);
   font-size: 2.5em;
   position: absolute;
@@ -103,7 +118,7 @@ h1 {
   right: 10px;
 }
 
-.answer {
+.question-card__answer {
   border: 1px solid #00f;
   width: 75%;
   margin: 20px auto;
@@ -111,12 +126,12 @@ h1 {
   padding: 3%;
 }
 
-.answer:hover {
+.question-card__answer:hover {
   background-color: #00f;
   color: #ddd;
 }
 
-.tags {
+.question-card__tags {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -125,12 +140,20 @@ h1 {
   font-style: italic;
 }
 
-.tag {
+.question-card__tag {
   font-size: 13px;
   margin: 0;
   border-bottom: 1px solid #00f;
   border-top: 1px solid #00f;
   color: #bbb;
+  transition-property: background, transform;
+  transition: 1s ease-in-out;
+}
+
+.question-card__tag:hover {
+  background: #00f;
+  transform: scale(1);
+  font-size: 19px;
 }
 
 /*PROFLE SITE*/
@@ -165,6 +188,7 @@ h1 {
 
 .photo-box:hover {
   scale: 1.2;
+  transition: margin-right 2s ease-in-out;
 }
 
 .about {
@@ -198,10 +222,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
 }
 
 .button-logout {
-  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   font-style: italic;
   font-family: sans-serif;
   color: #fff;
@@ -211,4 +237,96 @@ h1 {
 .button-logout a {
   color: #fff;
   text-decoration: none;
+}
+
+/*FORMAT */
+
+.form {
+  min-height: 200px;
+  border: 1px solid #00f;
+  margin-bottom: 20px;
+}
+
+.form-create {
+  padding: 20px;
+}
+
+.form-create {
+  color: #00f;
+  font-style: italic;
+}
+
+.form-question {
+  margin: 10%;
+  height: 100px;
+}
+
+.form-question h2 {
+  margin-top: 50px;
+  color: #00f;
+  text-align: center;
+  font-style: italic;
+}
+
+.form-answer {
+  text-align: center;
+  height: 200px;
+  width: 100%;
+}
+
+.form-button {
+  color: #00f;
+  font-style: italic;
+  padding: 5%;
+  margin: 0px 50px;
+  font-weight: 800;
+}
+
+.form-button:hover {
+  background-color: #00f;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.form-tags h2 {
+  color: #00f;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-tags__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-tags__tag p {
+  font-size: 10px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-bottom: 1px solid #00f;
+  font-style: italic;
+  font-weight: 800;
+  color: #00f;
+}
+
+.login-area {
+  margin: 100% 35%;
+}
+
+.button-area {
+  padding: 20%;
+}
+
+.login-area a {
+  text-decoration: none;
+  color: #00f;
+  font-style: italic;
+}
+
+.active {
+  color: rgb(255, 249, 0);
 }
