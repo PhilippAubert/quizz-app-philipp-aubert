@@ -21,9 +21,14 @@ button {
   font-size: 1em;
 }
 
+input {
+  width: 268px;
+}
+
 fieldset {
-  padding: 0;
   border: 1px solid #00f;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .layout-grid {
@@ -76,7 +81,7 @@ h1 {
 
 .footer-grid-dark {
   background-color: #000;
-  border: 1px solid #fff;
+  border: 1px solid rgb(251, 255, 0);
 }
 
 .button {
@@ -119,9 +124,9 @@ h1 {
 
 .question-card__bookmark-non {
   color: #ccc;
-  font-size: 5em;
+  font-size: 2.5em;
   position: absolute;
-  top: -10px;
+  top: -5px;
   right: 10px;
 }
 
@@ -193,12 +198,6 @@ h1 {
   position: relative;
 }
 
-.photo-box-night {
-  border-bottom: 1px solid rgb(251, 255, 0);
-  border-top: 1px solid rgb(251, 255, 0);
-  color: rgb(251, 255, 0);
-}
-
 .photo-box h3 {
   font-size: 1.9em;
   color: #00f;
@@ -208,8 +207,14 @@ h1 {
   margin-top: 40%;
 }
 
-.normal-night {
-  color: rgb(251, 255, 0);
+.photo-box-night {
+  border-bottom: 1px solid rgb(251, 255, 0) !important;
+  border-top: 1px solid rgb(251, 255, 0) !important;
+  color: rgb(251, 255, 0) !important;
+}
+
+.photo-box-night h3 {
+  color: rgb(251, 255, 0) !important;
 }
 
 .cropped {
@@ -288,7 +293,8 @@ h1 {
 }
 
 .button-logout-dark {
-  background-color: #000;
+  background-color: rgb(251, 255, 0);
+  color: #00f;
 }
 
 .button-logout a {
@@ -297,7 +303,7 @@ h1 {
 }
 
 .button-logout-dark a {
-  color: #fff;
+  color: #00f;
 }
 
 .body-dark {
@@ -339,12 +345,6 @@ h1 {
   font-style: italic;
 }
 
-.form-answer {
-  text-align: center;
-  height: 200px;
-  width: 100%;
-}
-
 .form-button {
   color: #00f;
   font-style: italic;
@@ -373,15 +373,25 @@ h1 {
   flex-wrap: wrap;
 }
 
+.form-tags__tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 2px 4px;
+}
+
 .form-tags__tag p {
   font-size: 10px;
-  margin-right: 20px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0 5px;
   border-bottom: 1px solid #00f;
   font-style: italic;
   font-weight: 800;
   color: #00f;
+}
+
+.form-tags__tag input {
+  width: 12px;
+  margin: 0 2px;
 }
 
 .login-area {
