@@ -59,6 +59,10 @@ p {
   margin: 20px;
 }
 
+.header-grid-dark {
+  border: 1px solid rgb(251, 255, 0);
+}
+
 h1 {
   font-style: italic;
   margin-top: 35px;
@@ -68,7 +72,7 @@ h1 {
 .main-grid {
   background-color: #fff;
   grid-row: 2/ 3;
-  padding: 8%;
+  padding: 0 10%;
   overflow-y: scroll;
 }
 
@@ -79,7 +83,8 @@ h1 {
 .footer-grid {
   border: 1px solid #000;
   grid-row: 3 / 4;
-  margin-bottom: 20px;
+  margin: 20px;
+  padding-top: 4px;
   display: flex;
   flex-direction: row;
 }
@@ -102,7 +107,8 @@ h1 {
 }
 
 .icon {
-  font-size: 1.8em;
+  text-align: center;
+  font-size: 1.5em;
   color: #00f;
 }
 
@@ -118,7 +124,7 @@ h1 {
 
 .question-card__total {
   border: 2px solid #00f;
-  padding: 5%;
+  padding: 1%;
   margin: 40px 0;
   font-size: 0.6em;
   background: #fff;
@@ -157,6 +163,8 @@ h1 {
   display: block;
   font-size: 12px;
   font-weight: 800;
+  margin: 5px auto;
+  width: 50%;
   background-color: #ff0;
 }
 
@@ -243,7 +251,6 @@ h1 {
 }
 
 .about-dark h2 {
-  border-bottom: 1px solid rgb(251, 255, 0);
   color: rgb(251, 255, 0);
 }
 
@@ -318,8 +325,7 @@ h1 {
 
 /*FORMAT */
 input {
-  height: 100px;
-  width: 200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -387,7 +393,9 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin: 2px 4px;
+  align-items: center;
+  height: 14px;
+  margin: 2px 0;
 }
 
 .form-tags__tag p {
