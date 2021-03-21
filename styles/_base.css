@@ -35,21 +35,6 @@ fieldset {
   margin: 0 auto;
 }
 
-.background-animation {
-  background: linear-gradient(90deg #00f, #fff, #ff0);
-  background-size: 600% 100%;
-  animation: gradient 16s linear infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
-}
-
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -400,7 +385,14 @@ h1 {
 }
 
 .login-area {
-  margin: 100% 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-login {
+  margin-top: 55%;
 }
 
 .button-area {
