@@ -11,15 +11,14 @@
     ></script>
   </head>
 
-  <body class="layout-grid">
+  <body class="layout-grid body">
     <header id="start" class="header-grid">
-      <div class="headline"><h1>YOUR PROFILE</h1></div>
+      <div><h1 class="headline">YOUR PROFILE</h1></div>
     </header>
 
     <main class="main-grid">
-      <div class="main-content"></div>
-
       <section id="profile">
+        <button class="nightMode">Night Mode</button>
         <div class="photo-box">
           <img class="cropped" src="IMG_1256.JPG" alt="this is me!" />
 
@@ -50,7 +49,7 @@
       <section>
         <div class="logout-area">
           <button class="button-logout">
-            <p><a href="">LOGOUT</a></p>
+            <p><a href="index.html">LOGOUT</a></p>
           </button>
         </div>
       </section>
@@ -64,11 +63,12 @@
         <a href="tags.html"><i class="fas fa-bookmark icon"></i></a>
       </div>
       <div class="button">
-        <a href="create.html"><i class="fas fa-stream icon active"></i></a>
+        <a href="create.html"><i class="fas fa-stream icon"></i></a>
       </div>
       <div class="button">
-        <a href="profile.html"><i class="fas fa-user-alt icon"></i></a>
+        <a href="profile.html"><i class="fas fa-user-alt icon active"></i></a>
       </div>
     </footer>
+    <script src="JS/night.js"></script>
   </body>
 </html>
