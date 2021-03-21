@@ -26,6 +26,7 @@ button {
   font-size: 1em;
 }
 
+<<<<<<< HEAD
 input {
   width: 268px;
 }
@@ -34,6 +35,10 @@ fieldset {
   border: 1px solid #00f;
   margin: 0 auto;
   padding: 0;
+=======
+button {
+  margin-top: 20px;
+>>>>>>> main
 }
 
 .layout-grid {
@@ -345,7 +350,16 @@ input {
 }
 
 .form-question {
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+  margin: 0 13%;
+  height: 200px;
+}
+
+.form-question:last-child {
+  height: 100px;
+>>>>>>> main
 }
 
 .form-question h2 {
