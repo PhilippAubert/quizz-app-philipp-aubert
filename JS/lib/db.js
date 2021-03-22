@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 0,
-    title: 'Question',
+
     question: 'What type of a language is HTML?',
     answer: 'Markup Language',
     isBookmarked: true,
@@ -9,7 +9,7 @@ export const data = [
   },
   {
     id: 1,
-    title: 'Question',
+
     question: 'Inside which HTML element do we put the JavaScript?',
     answer: '<script>',
     isBookmarked: true,
@@ -17,7 +17,7 @@ export const data = [
   },
   {
     id: 2,
-    title: 'Question',
+
     question: 'Who maintains the CSS specifications?',
     answer: 'World Wide Web Consortium.',
     isBookmarked: true,
@@ -25,7 +25,7 @@ export const data = [
   },
   {
     id: 3,
-    title: 'Question',
+
     question: 'Who designed the Linux OS?',
     answer: 'Linus Torvalds',
     isBookmarked: true,
@@ -33,7 +33,7 @@ export const data = [
   },
   {
     id: 4,
-    title: 'Question',
+
     question:
       'Which of the following key combinations allows to terminate the current process in Linux shell?',
     answer: 'Ctrl + C',
@@ -42,7 +42,7 @@ export const data = [
   },
   {
     id: 5,
-    title: 'Question',
+
     question: 'What is the correct way to write a JavaScript array?',
     answer: 'const colors = ["red", "green", "blue"]',
     isBookmarked: true,
@@ -50,7 +50,7 @@ export const data = [
   },
   {
     id: 6,
-    title: 'Question',
+
     question: 'What should be the first tag in any HTML Document?',
     answer: '<!doctype html>',
     isBookmarked: false,
@@ -58,7 +58,7 @@ export const data = [
   },
   {
     id: 7,
-    title: 'Question',
+
     question: 'How can you add a comment in a JavaScript?',
     answer: '//This is a comment',
     isBookmarked: false,
@@ -66,7 +66,7 @@ export const data = [
   },
   {
     id: 8,
-    title: 'Question',
+
     question: 'What tag is used to display a picture in a HTML page?',
     answer: 'Img',
     isBookmarked: false,
@@ -74,7 +74,7 @@ export const data = [
   },
   {
     id: 9,
-    title: 'Question',
+
     question: 'HTML are web pages read and rendered by?',
     answer: 'Web Browser',
     isBookmarked: false,
@@ -82,7 +82,7 @@ export const data = [
   },
   {
     id: 10,
-    title: 'Question',
+
     question: 'Who created Git?',
     answer: 'Linus Torvalds',
     isBookmarked: true,

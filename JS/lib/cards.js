@@ -1,3 +1,5 @@
+/////////////////////////// HTML STRUCTURE /////////////////////////////////
+
 //   <section id="question-card0">
 //   <div class="question-card__total">
 //     <h2>QUESTION X</h2>
@@ -13,6 +15,8 @@
 //   </div>
 // </section>
 
+///////////////////////////////  JS ///////////////////////////////
+
 export function createCard(card) {
   const cardSection = document.createElement('section')
 
@@ -21,6 +25,7 @@ export function createCard(card) {
   headlineFrame.classList.add('question-card__total-headline-frame')
 
   const headLine = document.createElement('h2')
+
   headLine.textContent = 'QUESTION'
   headlineFrame.append(headLine)
   headLine.classList.add('question-card__total-headline')
@@ -46,7 +51,7 @@ export function createCard(card) {
 
   const questionBookmark = document.createElement('i')
   questionBookmark.classList.add(
-    'question-card__bookmark',
+    'question-card__bookmark-non',
     'fas',
     'fa-bookmark',
     'icon'
@@ -59,7 +64,7 @@ export function createCard(card) {
 
   for (let i = 0; i < bookmarks.length; i++) {
     bookmarks[i].addEventListener('click', event => {
-      bookmarks[i].classList.toggle('question-card__bookmark-non')
+      bookmarks[i].classList.toggle('question-card__bookmark')
     })
   }
 
@@ -75,68 +80,3 @@ export function createCard(card) {
 
   return cardSection
 }
-
-// <div class="question-card__total">
-// <h2>QUESTION X</h2>
-
-// <p>Can you die without perishing ?</p>
-
-// <button class="question-card__answer">Show Answer</button>
-
-// <i class="fas fa-bookmark question-card__bookmark-non"></i>
-// <p class="answer">
-//   When your body leaves your soul, your soul will be forever
-// </p>
-// </div>
-// </section>
-
-// <section id="question-card1">
-// <div class="question-card__total">
-// <h2>QUESTION X</h2>
-
-// <p>Is Canada what you think it is?</p>
-
-// <button class="question-card__answer">Show Answer</button>
-
-// <i class="fas fa-bookmark question-card__bookmark-non"></i>
-// <p class="answer">Trust me, I know</p>
-// </div>
-// </section>
-
-// <section id="question-card2">
-// <div class="question-card__total">
-// <h2>QUESTION X</h2>
-
-// <p>Who wrote "El Capolavoro?""</p>
-
-// <button class="question-card__answer">Show Answer</button>
-
-// <i class="fas fa-bookmark question-card__bookmark-non"></i>
-// <p class="answer">There is no "El Capolavoro"</p>
-// </div>
-// </section>
-
-// <section id="question-card3">
-// <div class="question-card__total">
-// <h2>QUESTION X</h2>
-
-// <p>How slow can a man jump?</p>
-
-// <button class="question-card__answer">Show Answer</button>
-
-// <i class="fas fa-bookmark question-card__bookmark-non"></i>
-// <p class="answer">1 N m = 1 / kg * m2 / s2</p>
-// </div>
-// </section>
-
-// <section id="question-card4">
-// <div class="question-card__total">
-// <h2>QUESTION X</h2>
-
-// <p>What is it with Buddha ?</p>
-
-// <button class="question-card__answer">Show Answer</button>
-
-// <i class="fas fa-bookmark question-card__bookmark-non"></i>
-// <p class="answer">Three sacks of hemp.</p>
-// </div>

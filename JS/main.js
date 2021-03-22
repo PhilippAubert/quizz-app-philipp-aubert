@@ -12,3 +12,4 @@ for (let i = 0; i < data.length; i++) {
 // console.log(data)
 createCard(createCard)
 console.log(createCard)
+console.log(data)
