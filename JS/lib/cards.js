@@ -44,8 +44,6 @@ export function createCard(card) {
   questionButton.classList.add('question-card__total')
   cardLayout.append(questionButton)
 
-  //event listener  here
-
   const answerText = document.createElement('p')
   answerText.textContent = card.answer
   cardLayout.append(answerText)
