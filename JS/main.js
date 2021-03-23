@@ -8,8 +8,3 @@ for (let i = 0; i < data.length; i++) {
 
   content.append(card)
 }
-
-// console.log(data)
-createCard(createCard)
-console.log(createCard)
-console.log(data)

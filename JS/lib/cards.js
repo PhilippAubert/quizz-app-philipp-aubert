@@ -44,10 +44,18 @@ export function createCard(card) {
   questionButton.classList.add('question-card__total')
   cardLayout.append(questionButton)
 
+  //event listener  here
+
   const answerText = document.createElement('p')
   answerText.textContent = card.answer
   cardLayout.append(answerText)
   answerText.classList.add('answer')
+
+  questionButton.addEventListener('click', event => {
+    answerText.classList.toggle('answer-shown')
+    event.target.textContent =
+      event.target.textContent === 'Hide Answer' ? 'Show Answer' : 'Hide Answer'
+  })
 
   const questionBookmark = document.createElement('i')
   questionBookmark.classList.add(
@@ -57,26 +65,8 @@ export function createCard(card) {
     'icon'
   )
   cardLayout.append(questionBookmark)
-
-  const bookmarks = document.querySelectorAll('i')
-  const answers = document.querySelectorAll('.answer')
-  const buttons = document.querySelectorAll('button')
-
-  for (let i = 0; i < bookmarks.length; i++) {
-    bookmarks[i].addEventListener('click', event => {
-      bookmarks[i].classList.toggle('question-card__bookmark')
-    })
-  }
-
-  for (let i = 0; i < answers.length; i++) {
-    buttons[i].addEventListener('click', event => {
-      answers[i].classList.toggle('answer-shown')
-      event.target.textContent =
-        event.target.textContent == 'Hide Answer'
-          ? 'Show Answer'
-          : 'Hide Answer'
-    })
-  }
-
+  questionBookmark.addEventListener('click', event => {
+    questionBookmark.classList.toggle('question-card__bookmark')
+  })
   return cardSection
 }
