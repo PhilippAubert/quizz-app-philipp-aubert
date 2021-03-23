@@ -68,3 +68,4 @@ export function createCard(card) {
   })
   return cardSection
 }
+
