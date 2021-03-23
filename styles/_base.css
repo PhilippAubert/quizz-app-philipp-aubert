@@ -119,13 +119,29 @@ h1 {
 
 /*question-card*/
 
-.question-card__total p h2 {
-  margin: 0;
+.question-card__total-headline-frame {
+  color: #00f;
+  font-family: Arial;
+  font-style: italic;
+}
+
+.question-card__total-headline {
+  font-size: 3em;
+}
+
+.question-card__total-h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  margin-top: 5px auto;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  color: #00f;
 }
 
 .question-card__total {
   border: 2px solid #00f;
-  padding: 1%;
+  padding: 10%;
   margin: 40px 0;
   font-size: 0.6em;
   background: #fff;
@@ -134,16 +150,29 @@ h1 {
   text-align: center;
 }
 
+.question-card__total button {
+  border: 1px solid #00f;
+  font-size: 1.3em;
+  border-radius: 0;
+  background-color: #00f;
+  color: #fff;
+  padding: 4%;
+}
+
 .question-card__bookmark-non {
   color: #ccc;
-  font-size: 2.5em;
+  font-size: 5em;
   position: absolute;
-  top: -5px;
-  right: 10px;
+  top: -7px;
+  right: 22px;
 }
 
 .question-card__bookmark {
   color: rgb(251, 255, 0);
+  font-size: 5em;
+  position: absolute;
+  top: -7px;
+  right: 22px;
 }
 
 .question-card__answer {
@@ -155,17 +184,24 @@ h1 {
 }
 
 .answer {
+  margin-top: 20px;
+
   display: none;
   font-size: 12px;
   font-weight: 800;
   background-color: #ff0;
 }
+
+.answer p {
+}
+
 .answer-shown {
   display: block;
-  font-size: 12px;
+  margin-top: 20px;
+  font-size: 1.8em;
+
   font-weight: 800;
   margin: 5px auto;
-  width: 50%;
   background-color: #ff0;
 }
 
@@ -388,6 +424,7 @@ input {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .form-tags__tag {
