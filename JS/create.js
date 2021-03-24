@@ -1,25 +1,28 @@
 import { pushSection } from './lib/db.js'
 
-let forms = document.querySelectorAll('form')
+let form = document.querySelector('form')
 
-for (let i = 0; i < forms.length; i++) {
-  forms[i].addEventListener('submit', event => {
-    event.preventDefault()
+form.addEventListener('submit', event => {
+  event.preventDefault()
 
-    let input1 = forms[i]['textarea1']
-    let input2 = forms[i]['textarea2']
+  let question = form['textarea1']
+  let answer = form['textarea2']
 
-    let submit = `Question: ${input1.value} // Answer: ${input2.value}`
-
-    console.log(submit)
-
-    forms[i].reset()
-    // console.log(inputForAnswer.value)
-  })
-
-  function itemsStringToArray(itemsString) {
-    const submit = itemsString.split(',')
-
-    return submit
+  const submit = {
+    questionText: question.value,
+    answerText: answer.value,
   }
+
+  console.log(submit)
+
+  pushSection(submit)
+
+  form.reset()
+  alert('Adding Question / Answer!')
+})
+
+function itemsStringToArray(itemsString) {
+  const submit = itemsString.split(',')
+
+  return submit
 }
