@@ -25,4 +25,5 @@ function itemsStringToArray(itemsString) {
   const submit = itemsString.split(',')
 
   return submit
+  console.log(submit)
 }

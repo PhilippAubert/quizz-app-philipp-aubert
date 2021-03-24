@@ -35,7 +35,7 @@ export function createCard(card) {
   cardLayout.classList.add('question-card__total')
 
   const questionH2 = document.createElement('h2')
-  questionH2.textContent = card.question
+  questionH2.textContent = card.questionText
   cardLayout.append(questionH2)
   questionH2.classList.add('question-card__total-h2')
 
@@ -45,7 +45,7 @@ export function createCard(card) {
   cardLayout.append(questionButton)
 
   const answerText = document.createElement('p')
-  answerText.textContent = card.answer
+  answerText.textContent = card.answerText
   cardLayout.append(answerText)
   answerText.classList.add('answer')
 
@@ -68,4 +68,3 @@ export function createCard(card) {
   })
   return cardSection
 }
-
